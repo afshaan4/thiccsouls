@@ -32,6 +32,8 @@ class App:
 
 
     def run(self):
+        calculatedLength = 0
+        distance = 0
         while True:
             ret, frame = self.cam.read()
             distance = self.arduino.readline()[:-2]
