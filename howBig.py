@@ -34,7 +34,8 @@ class App:
     def run(self):
         calculatedLength = 0
         distance = 0
-        while True:
+        running = True
+        while running:
             ret, frame = self.cam.read()
             distance = self.arduino.readline()[:-2]
 
@@ -55,7 +56,7 @@ class App:
             cv2.imshow("BRUH", frame)
             k = cv2.waitKey(30)
             if k == 27:
-                break
+                running = False
 
 
 def main():
