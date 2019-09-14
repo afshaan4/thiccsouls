@@ -24,11 +24,11 @@ class App:
 
     # USE ONE UNIT FOR ALL ARGS, cm in this case
     def calculateImageSize(self, size, f, dist):
-                # image size = object size * focal length / distance to object
-                if dist < 1:
-                    return 0
-                else:
-                    return (size * f / dist)
+        # image size = object size * focal length / distance to object
+        if dist < 1:
+            return 0
+        else:
+            return (size * f / dist)
 
 
     def run(self):
