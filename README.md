@@ -6,6 +6,8 @@ Thats a scale ruler:
 
 ![scale ruler](https://user-images.githubusercontent.com/20749736/64703783-bcf27780-d4ca-11e9-80a7-e58286589bbf.jpg)
 
+`scaling.ipynb` demonstrates the scaling formula
+
 # The maths
 
 To be able to calculate the size of something in an image you need:
